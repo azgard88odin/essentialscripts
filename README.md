@@ -10,7 +10,7 @@ Below will be an explaination of each script found within. Some of these are pre
 
 I will be updating this periodically so please excuse if I have not yet give descriptions to them all.
 
-### Bash Scripts:
+## Bash Scripts:
 
   asm32:
     Usage: asm32 <filename>
