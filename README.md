@@ -23,14 +23,24 @@ I will be updating this periodically so please excuse if I have not yet give des
     -g will give you the output in gigabytes
 
   ### rot13 & derot13
-    Usage: cat <textfile> | rot13 || derot13
+    Usage: cat <textfile> | <rot13|derot13>
     I created this to 'encrypt' and 'decrypt' rot13 text when I was busy with basic cryptography
 
   ### nss
-    Usage: nss <-b || -p2 || -p3>
+    Usage: nss <-b|-p2|-p3>
     nss (New Shell Script) was a script I originally created to make creating bash scripts quickly in the terminal.
     The user would be prompted the filename after selecting one of the options
     The script would then create the file, fill it with basic boiler plate code and the shebang line and open it up in VIM for editing
     Yes, I use VIM and I love it.
+
+  ### setup_system.sh
+    Usage: setup_system.sh
+    This is a recent script I made to quickly setup my WSL Ubuntu system.
+    Check it out and run if you want to use it.
+
+  ### wi-man & wi-mon
+    Usage: <wi-man|wi-mon>
+    These are scripts I made to quickly get my Parrot system's wifi interface in managed or monitor mode.
+    This was done when pentesting WPA2
 
   
