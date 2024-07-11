@@ -43,4 +43,14 @@ I will be updating this periodically so please excuse if I have not yet give des
     These are scripts I made to quickly get my Parrot system's wifi interface in managed or monitor mode.
     This was done when pentesting WPA2
 
+## Batch Scripts (Windows CMD Prompt)
+
+  ### Foreword
+  So everytime I make a batch script that I wish to run from the terminal in windows, I add it to a common directory that is always in the %PATH% variable.
   
+
+  ### dec2hex.cmd
+    Usage: dec2hex.cmd <decimal_number>
+    This is a very basic script that just helps to quickly convert a base10 number to a base16 number (decimal to hexidecimal)
+    This is not all my code, I unfortunately cannot remember the original writer of the main logic and loop behind the process.
+    But, this taught me a lot more about Batch scripting and is handy to have
