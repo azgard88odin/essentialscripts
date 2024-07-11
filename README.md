@@ -1,4 +1,4 @@
-#Essential Scripts
+# Essential Scripts
 Hi all,
 
 This repo is mainly for me to access certain scripts for quick access externally.
