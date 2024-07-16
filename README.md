@@ -54,6 +54,15 @@ I take no responsibility for any malicious use of these scripts.
   %USERPROFILE%\AppData\Local\Microsoft\WindowsApps\ OR C:\Users\YOUR_USERNAME\AppData\Local\Microsoft\WindowsApps\
   Once the files are there you can run them by typing in the filename even without the extension.
 
+  ### cmprivacy.cmd & cmEnable.cmd & cmDisable.cmd
+    Usage: cmprivacy.cmd [/e|/d]
+    A new addition to my batch scripts. I did this is batch just because it is easier to execute than a powershell script.
+    This basically turns on and off the privacy settings for both the webcam and the microphone of my computer.
+    My registry keys were found in "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\"
+    But yours may be in another location. See the link below for more information. 
+    https://www.elevenforum.com/t/enable-or-disable-apps-access-to-microphone-in-windows-11.17117/#Nine
+    P.S. if someone has a better way of writing this, please let me know.
+
   ### dec2hex.cmd
     Usage: dec2hex.cmd <decimal_number>
     This is a very basic script that just helps to quickly convert a base10 number to a base16 number (decimal to hexidecimal)
