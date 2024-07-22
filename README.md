@@ -95,6 +95,18 @@ I take no responsibility for any malicious use of these scripts.
     This way you don't have the user accidently select dvorak while typing incase you didn't remove language via the GUI
     And every time I need to work on the system, I just open CMD and call the command. 
 
+  ### netkill.cmd || netkillasadmin.cmd
+    Usage: netkill.cmd [""|/e]
+    This script acts as a quick kill switch to your Wi-Fi interface. 
+    Run without any arguments to disable to kill the network connection. Run with the '/e' argument to re-enable the interface.
+    ** NOTE ** When you use this killswitch, the Wi-Fi button in the quick access menu, will disappear until you enable it again via this command.
+    
+    If you are connected via ethernet, use the command 'netsh interface show interface' to view the name of your network interface.
+    I added both netkill.cmd (the original) and netkillasadmin.cmd (elevator). Should you always be using command prompt as Administrator, use netkill.cmd
+    If ever you are in a normal command prompt, use netkillasadmin.cmd. This file contains a line which elevates your priviledges and then executes the commands.
+    That same line can be used in any batch script should you so wish. 
+    Kudos to @Stefan and @Sire from the following post for that batch line. https://stackoverflow.com/questions/6811372/how-to-code-a-bat-file-to-always-run-as-admin-mode# 
+
   ### networkRefresh.bat
     Usage: networkRefresh.bat
     This script will reset the following:
