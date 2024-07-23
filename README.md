@@ -117,6 +117,12 @@ I take no responsibility for any malicious use of these scripts.
     After all of this, it will automatically restart your machine so make sure you are ready for it.
     This was created to assist my WSL when it no longer connects to the internet as I sometimes host a server from my WSL for testing purposes (see addwslsettings.ps1)
 
+  ### ntshelllive.cmd
+    Usage: ntshelllive.cmd
+    This script runs from a normal CMD prompt and elevates to admin, which then spawns an NT Authority Shell. This can be very useful in many scenarios.
+    Feel free to rename as 'ntshell.cmd' and, remove or comment out, the curl line. This is incase you do not have the PsExec64.exe on your system.
+    ** NOTE ** Should you have a 32-bit system and wish to have the script download PsExec for you, changed 'PsExec64.exe' ot 'PsExec.exe'
+
   ### optimizeWSL.bat
     Usage: optimizeWSL.bat
     So I ran into a few issues with WSL, the biggest problem was that the virtual hard disk would not autocompact again after removing some items.
@@ -125,6 +131,16 @@ I take no responsibility for any malicious use of these scripts.
     This script is for Windows 11 Home WSL Virtual Hard Disk Compacting so that you can reclaim space on the host system.
     The script will shutdown WSL, create a diskpart script and resize your WSL. Give it at least 5 minutes before running WSL again.
     Please fill in the correct details in the path before running the script. Happy coding!
+
+  ### removeedge.cmd + rock.ps1
+    Usage: removeedge.cmd
+    ** NOTE ** Please download the 'rock.ps1' script and keep it in the same directory as the 'removeedge.cmd' script.
+    This effectively removes Microsoft Edge. Kudos to daboynb for his script. I essentially just shortend it because I did not require all the additonal checks in his script.
+    I named the powershell script 'rock' because when you run a blade against it, it loses its EDGE! #dadjokes
+
+  ### restartprinter.cmd
+    Usage: restartprinter.cmd
+    This script simply restarts the printer spooler which can sometimes help fix errors you may be facing.
 
   ### runscript.bat
     Usage: runscript.bat <script_you_want_to_run.bat>
@@ -154,4 +170,10 @@ I take no responsibility for any malicious use of these scripts.
     Modify the Port on which you wish to access your webserver - see the firewall rules, the port variable (obviously you can reposition it to the top of the script and replace the '3000' with $port
     Get your WSL IPv4 address (ifconfig || ip a || hostname -I) and enter it in the $remoteport variable and run the addwslsettings.ps1 script
     For security reasons I usually run removewslsettings.ps1 after I no longer need to host the server.
+
+  ### trustedACL.ps1
+    Usage: trustedACL.ps1
+    Please review the source code and modify as needed. This script changes ownership to 'TrustedInstaller'.
+    ** NOTE ** This MUST be run as NT Authority (see #ntshelllive.cmd above)
+    I used this when I was messing around with the ACL on the IntegratedServicesRegionPolicySet.json file (interesting read...) and I needed to fix it to work correctly.
   
