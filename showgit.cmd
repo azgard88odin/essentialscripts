@@ -1,0 +1,1 @@
+curl -s https://api.github.com/repos/azgard88odin/essentialscripts/contents/ | find "name"
