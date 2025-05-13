@@ -1,6 +1,6 @@
 #!/bin/bash
 
-config_file="/etc/ssh/sshd_config"
+config_file="/etc/ssh/ssh_config"
 target_host="connect-icmsolar"
 new_hostname="igoteggs.ddns.net"
 
